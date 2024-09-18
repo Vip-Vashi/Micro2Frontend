@@ -3,7 +3,7 @@ import React from 'react';
 const SupportPage = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-center">Get Professional Help from LG Experts</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">Get Professional Help from our Experts</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -68,7 +68,7 @@ const SupportPage = () => {
           />
           <h2 className="text-xl font-semibold mb-2">Step 4: Receive LG-Certified Repair Services</h2>
           <p className="text-gray-700 mb-4">
-            Get repair services from LG-certified experts using genuine LG parts. Rest assured that your appliance is in good hands.
+            Get repair services from our experts using genuine LG parts. Rest assured that your appliance is in good hands.
           </p>
           {/* <a
             href="/repair-services"

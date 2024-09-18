@@ -577,7 +577,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaArrowLeft } from "react-icons/fa";
-
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const BASE_URL = "http://localhost:8000/";
 
 const UserRequestsPage = () => {
@@ -650,7 +651,8 @@ const UserRequestsPage = () => {
       // Optionally refresh the list of requests
       const response = await axios.get(`${BASE_URL}servicerequests`);
       setRequests(response.data.filter(request => !request.technician || !request.technician.techId));
-      alert("Technician Assigned Successfully!!")
+      // alert("Technician Assigned Successfully!!")
+      toast.success("Technician Assigned Successfully!!")
     } catch (error) {
       console.error("Failed to assign technician", error);
     }
@@ -779,6 +781,7 @@ const UserRequestsPage = () => {
           </div>
         </div>
       )}
+        <ToastContainer />
     </div>
   );
 };

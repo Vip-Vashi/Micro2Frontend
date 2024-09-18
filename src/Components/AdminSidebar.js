@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUser, FaMoneyBill, FaBox, FaCog, FaIndustry, FaTruck, FaToolbox } from 'react-icons/fa';
+import { FaUser, FaMoneyBill, FaBox, FaCog, FaIndustry, FaTruck, FaToolbox, FaTasks } from 'react-icons/fa';
  
 const Sidebar = () => {
   return (
@@ -17,14 +17,14 @@ const Sidebar = () => {
           to="/reqs"
           className="flex items-center text-white hover:text-gray-400 transition-colors duration-300 transform hover:scale-105"
         >
-          <FaMoneyBill className="text-2xl mr-2" />
+          <FaTasks className="text-2xl mr-2" />
           <span>Service Requests</span>
         </Link>
         <Link
           to="/assign"
           className="flex items-center text-white hover:text-gray-400 transition-colors duration-300 transform hover:scale-105"
         >
-          <FaBox className="text-2xl mr-2" />
+          <FaToolbox className="text-2xl mr-2" />
           <span>Assign Technician</span>
         </Link>
         <Link

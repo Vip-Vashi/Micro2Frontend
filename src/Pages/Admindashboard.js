@@ -105,7 +105,7 @@ const AdminDashboard = () => {
  
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Action Cards */}
-              <Link to="/reqs" className="bg-blue-600 text-white shadow-lg rounded-lg p-6 flex items-center justify-between hover:bg-blue-700 transition-colors ease-in-out duration-300">
+              <Link to="/view" className="bg-blue-600 text-white shadow-lg rounded-lg p-6 flex items-center justify-between hover:bg-blue-700 transition-colors ease-in-out duration-300">
                 <div className="flex items-center">
                   <FaMailBulk className="text-3xl mr-4" />
                   <h3 className="text-xl font-semibold">Manage Requests</h3>

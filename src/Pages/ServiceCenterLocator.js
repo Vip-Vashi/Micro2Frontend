@@ -183,7 +183,7 @@ const ServiceCenterLocator = () => {
   };
 
   return (
-    <div className="p-6 max-w-3xl mx-auto max-w-md mx-auto mt-10">
+    <div className="p-6 max-w-5xl mx-auto max-w-md mx-auto mt-10">
     <center> <h1 className="text-3xl font-bold mb-4 align-center">Service Centers Locator 🔎</h1></center> 
       <div className="relative mb-4">
         <input
@@ -209,7 +209,7 @@ const ServiceCenterLocator = () => {
           </ul>
         )}
       </div>
-      {selectedLocation && (
+      {selectedLocation ?  (
         // <div className="mt-4 map-container">
         //   <div className='map-container w-full h-96' dangerouslySetInnerHTML={{ __html: locations[selectedLocation] }} />
         // </div>
@@ -219,6 +219,8 @@ const ServiceCenterLocator = () => {
               dangerouslySetInnerHTML={{ __html: locations[selectedLocation] }}
              />
           </div>
+      ):(
+        <p>No service center available for the applied pincode.</p>
       )}
     </div>
 

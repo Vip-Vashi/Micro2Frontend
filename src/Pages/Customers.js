@@ -163,7 +163,7 @@ console.log(appliances);
       
         <div className=" bg-pink-200 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
         <div className=" p-4 cursor-pointer " onClick={() => setIsCustomerOpen(!isCustomerOpen)}>
-            <h2 className="text-xl font-semibold text-gray-800">Customer Details</h2>
+            <h2 className="text-xl font-semibold text-gray-800">Profile Details</h2>
             <svg className={`w-6 h-6 float-right transition-transform ${isCustomerOpen ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
             </svg>
@@ -171,8 +171,8 @@ console.log(appliances);
         
          
           {isCustomerOpen && customerDetails && (
-            <div className="p-4 bg-pink-100 bg-white rounded-md border-b border-gray-200">
-              <div className='p-4 bg-white rounded-md border-b border-gray-200'>
+            <div className="p-4 bg-pink-100  rounded-md border-b border-gray-200">
+              <div className='p-4 bg-gray-50 rounded-md border-b border-gray-200'>
               <p><strong>Customer Name:</strong> {customerDetails.name}</p>
               <p><strong>Email:</strong> {customerDetails.email}</p>
               <p><strong>Phone:</strong> {customerDetails.contact}</p>

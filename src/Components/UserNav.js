@@ -360,7 +360,16 @@ const UserNav = () => {
               Service History
               </button>
             </Link>
-          
+            <br></br>
+            <br></br>
+            <Link
+              to="/billing"
+              className={`text-gray-400 mr-4  ${isActive("/servicecenter")}`}
+            >
+               <button  className="w-full py-2 px-4 bg-yellow-500 hover:bg-green-800 text-white rounded">
+              Billing
+              </button>
+            </Link>
            
             <br>
             </br>

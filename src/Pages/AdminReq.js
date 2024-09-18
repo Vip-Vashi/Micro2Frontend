@@ -891,6 +891,7 @@ const AdminReq = () => {
                 id="servicetype"
                 name="servicetype"
                 type="text"
+                disabled
                 value={editForm.servicetype}
                 onChange={handleEditChange}
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -905,6 +906,7 @@ const AdminReq = () => {
                 onChange={handleEditChange}
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 rows="3"
+                disabled
               />
             </div>
             <div className="mb-4">
@@ -915,6 +917,7 @@ const AdminReq = () => {
                 type="text"
                 value={editForm.productCondition}
                 onChange={handleEditChange}
+                disabled
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -924,6 +927,7 @@ const AdminReq = () => {
                 id="servicests"
                 name="servicests"
                 type="text"
+
                 value={editForm.servicests}
                 onChange={handleEditChange}
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -938,9 +942,10 @@ const AdminReq = () => {
                 value={editForm.preferredDate}
                 onChange={handleEditChange}
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                disabled
               />
             </div>
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <label htmlFor="feedback" className="block text-sm font-medium text-gray-600 mb-2">Feedback</label>
               <textarea
                 id="feedback"
@@ -950,7 +955,7 @@ const AdminReq = () => {
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 rows="3"
               />
-            </div>
+            </div> */}
             <button
               type="submit"
               className="px-4 py-2 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-300 mr-2"

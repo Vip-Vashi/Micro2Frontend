@@ -22,6 +22,8 @@ import TechnicianTasks from './Pages/WorkTracker';
 import ServiceCenterLocator from './Pages/ServiceCenterLocator';
 import AdminCustomer from './Pages/AdminCustomer';
 import Customers from './Pages/Customers';
+import CustomerPayment from './Pages/Payment';
+import ViewDetails from './Pages/Managereqs';
 export default function Approuter() {
   return (
     <>
@@ -45,6 +47,8 @@ export default function Approuter() {
             <Route path='/servicecenter' element={ <><UserNav/>  <ServiceCenterLocator/></> }/>
             <Route path='/customers' element={<><UserNav/><Customers/> </>}/>
             <Route path='/customer' element={<><AdminNav/><AdminCustomer/> </>}/>
+            <Route path='/billing' element={<><UserNav/> <CustomerPayment/></>}/>
+            <Route path='/view' element={<><AdminNav/><ViewDetails/></>}/>
         </Routes>
       </Router>
     </>
